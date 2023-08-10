@@ -5,7 +5,7 @@ from .models import Todo
 
 
 class TodoTestCase(TestCase):
-    def setUp(self):
+    def set_up(self):
         self.user = User.objects.create_user(
             username='test', password='test')
         self.user.save()
